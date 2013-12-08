@@ -62,7 +62,6 @@ for cp_username in result["acct"]:
             # Parse shadow file entry for username and password
             shadow_vars = account.split(':')
             if len(shadow_vars)>1:
-                email_account = shadow_vars[0]
                 email = "%s@%s" % (shadow_vars[0], domain["domain"])
                 password = shadow_vars[1]
 
