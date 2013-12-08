@@ -1,7 +1,7 @@
 cp2zim
 ======
 
-Seemless Cpanel to Zimbra email migration script.
+Seamless Cpanel to Zimbra email migration script.
 
 This script will generate all of the commands necessary for a seemless migration of email accounts from a WHM/Cpanel server to a Zimbra Mail server. The output can then be executed in batch. 
 
