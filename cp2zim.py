@@ -70,7 +70,7 @@ for cp_username in result["acct"]:
 
                 # Reset email account's password to temp pass
                 query_str = '/json-api/cpanel?cpanel_jsonapi_user=%s&cpanel_jsonapi_module=Email&cpanel_jsonapi_func=passwdpop&cpanel_xmlapi_version=2&email=%s&domain=%s&password=%s' % (username, email, domain["domain"], tmp_pass)
-                #http_query(whm_url, 2087, whm_user, whm_pass, query_str)
+                http_query(whm_url, 2087, whm_user, whm_pass, query_str)
 
         # Append domain and email accounts to data container
         data.append({"domain": domain["domain"], "emails": emails, "shadow": shadow_contents["data"]["content"]})
@@ -104,7 +104,7 @@ for domain in data:
     for email in domain["emails"]:
         # Restore domain's shadow file
         query_str = '/execute/Fileman/save_file_content?&dir=/home/%s/etc/%s&file=shadow&from_char=utf-8&to_char=utf-8&content="%s"&fallback=0' % (username, domain["domain"], shadow_contents["data"]["content"])
-        #http_query(whm_url, 2087, whm_user, whm_pass, query_str)    
+        http_query(whm_url, 2087, whm_user, whm_pass, query_str)    
             
         # Print zmprov reset password  (original, encrypted password)
         print "zmprov sp %s '{crypt}%s'" % (email["email"],  email["password"]) 
