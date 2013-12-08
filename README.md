@@ -14,9 +14,9 @@ Tested on WHM 11.40 and Zimba Community 8.0.5.
 1. Backup WHM's /etc/shadow file 
 2. Configure cp2zim.py script with WHM (url, user, pass) and Zimbra (url) variables
 3. Start script
-4. Run Zimbra commands on Zimbra server as zimbra user (su - zimbra)
-5. Run imapsync commands on a server with imapsync installed (be weary of cphulkd/lfd/etc!)
+4. Execute Zimbra commands on Zimbra server as zimbra user (su - zimbra)
+5. Execute imapsync commands on a server with imapsync installed (be weary of cphulkd/lfd/etc!)
 6. Type "yes" when mailboxes have finished synchronizing
-7. Run Zimbra commands on Zimbra server as zimbra user (su - zimbra)
+7. Execute remaining Zimbra commands on Zimbra server as zimbra user (su - zimbra)
 8. Restore /etc/shadow file on WHM server
 
