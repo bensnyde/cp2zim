@@ -7,7 +7,7 @@ This script will generate all of the commands necessary for a seemless migration
 
 Requires WHM root access. 
 
-<b>This script will temporarily change all Cpanel account passwords.</b> It is recommended that you backup /etc/shadow and each account's /home/%user%/etc/%domain%/shadow file prior to execution so that you can restore the original passwords afterwards.
+<b>This script will temporarily change all Cpanel account passwords.</b> Verify the integrity of system and account backups prior to execution!
 
 Tested on WHM 11.40 and Zimba Community 8.0.5.
 
